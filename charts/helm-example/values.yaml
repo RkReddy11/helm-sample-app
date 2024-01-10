@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   pullPolicy: Always
-  repository: 184686405663.dkr.ecr.us-east-2.amazonaws.com/rollback-poc
+  repository: 637423357038.dkr.ecr.us-east-2.amazonaws.com/rollback-poc
   tag: ""
 
 imagePullSecrets: []
