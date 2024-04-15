@@ -6,7 +6,6 @@ import (
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	// Constructing the HTML response with styled message
 	html := `
 	<!DOCTYPE html>
 	<html lang="en">
@@ -41,8 +40,6 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	</body>
 	</html>
 	`
-
-	// Writing the HTML response to the client
 	fmt.Fprintf(w, html)
 }
 
