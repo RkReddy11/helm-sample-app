@@ -6,8 +6,17 @@ import (
 )
 
 func indexHandler(w http.ResponseWriter, r *http.Request) {
-	fmt.Fprintf(w, "I am a GO application running inside Docker - V2.4.7, and Just now I have been upgraded")
+	const (
+		Reset  = "\033[0m"
+		Red    = "\033[31m"
+		Green  = "\033[32m"
+		Yellow = "\033[33m"
+	)
 
+	message := fmt.Sprintf("%sI am a GO application running inside Docker - %sV2.4.7%s, and Just now I have been upgraded%s",
+		Green, Yellow, Green, Reset)
+
+	fmt.Fprintf(w, message)
 }
 
 func main() {
