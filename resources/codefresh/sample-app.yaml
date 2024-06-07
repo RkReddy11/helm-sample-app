@@ -12,7 +12,7 @@ spec:
   source:
     repoURL: https://github.com/RkReddy11/helm-sample-app.git
     path: ''
-    targetRevision: master
+    targetRevision: HEAD
     directory:
       include: '*'
       exclude: ''
