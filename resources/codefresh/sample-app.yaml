@@ -3,7 +3,7 @@ kind: Application
 metadata:
   name: sample-app
   labels:
-    codefresh.io/entity: 'git-source'
+    codefresh.io/entity: git-source
     codefresh.io/internal: 'false'
   finalizers:
   - resources-finalizer.argocd.argoproj.io
@@ -11,8 +11,8 @@ spec:
   project: default
   source:
     repoURL: https://github.com/RkReddy11/helm-sample-app.git
-    path: .
-    targetRevision: HEAD
+    path: ''
+    targetRevision: master
     directory:
       include: '*'
       exclude: ''
