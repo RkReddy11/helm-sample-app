@@ -35,7 +35,7 @@ func indexHandler(w http.ResponseWriter, r *http.Request) {
 	</head>
 	<body>
 		<div class="container">
-			<span class="message">I am a GO application running inside a container - <span style="color: #ffc107;">v1.2</span>, Just now, I leveled up </span>
+			<span class="message">I am a GO application running inside a container - <span style="color: #ffc107;">v1.1</span>, I'm just a basic version 😔</span>
 		</div>
 	</body>
 	</html>
