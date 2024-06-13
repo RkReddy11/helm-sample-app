@@ -7,7 +7,7 @@ replicaCount: 2
 image:
   pullPolicy: Always
   repository: 637423357038.dkr.ecr.us-east-2.amazonaws.com/rollback-poc
-  tag: v1.1
+  tag: ""
 
 imagePullSecrets: []
 nameOverride: ""
